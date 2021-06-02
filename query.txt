@@ -1,0 +1,70 @@
+group: Grupo5 
+
+Telefon_Usuario = {
+telefono:number, rut_usuario:string
+}
+
+Usuarios = {
+rut:string, email:string, fecha_nacimiento:date, contrasenia:string, nombre_c_nombres:string, nombre_c_apellido_paterno:string, nombre_c_apellido_materno:string
+
+}
+
+Moderador = {
+rut_Usuarios:string, fecha_inicio:date
+}
+
+Persona = {
+rut_Usuarios:string,profesion:string,direccion_region:string,direccion_calle:string,direccion_comuna:string
+}
+
+Agente_inmoviliario = {
+rut_Usuarios:string,rut_Corredora:number,fecha_inicio:date,correo_institucional:string
+}
+
+Corredora = {
+rut:string, razon_social:string, direccion_comuna:string,direccion_calle:string,email:string,representante_legal:string
+}
+
+Telefono_Corredora = {
+telefono:number,rut_corredora:string
+}
+
+Publicacion = {
+id:number, id_propiedades:number, rut:string, estado:number, precio:number, arriendo_venta:number
+}
+
+Propiedades = {
+id:number,rut_Usuario:String,direccion_comuna:string,direccion_calle:string,sqrt:number,estacionamiento:number,estado:number
+}
+
+Residencial = {
+id_propiedad:number,banios:number,dormitorios:number,piscina:number,condominio:number,quicho:number,areas_verdes:number
+}
+
+Comercial = {
+id_propiedad:number,pisos:number,ambientes:number,subterraneo:number
+}
+
+Casa = {
+id_propiedad:number,pisos:number,pareada:number,patio:number,atico:number,sotano:number
+}
+
+Departamento = {
+id_propiedad:number,bodega:number,mascotas:number,gimnasio:number,balcon:number
+}
+
+Oficina = {
+id_propiedad:number,sala_reunion:number,bodegas:number
+}
+
+LocalComercial = {
+id_propiedad:number,banios:number,bodegas:number,recepcion:number
+}
+
+bodega = {
+id_propiedad:number,altura:number,volumen:number,loteada:number
+}
+
+Escritura = {
+id_propiedad:number,fecha_inscripcion:date,numero_inscripcion:number,rut_notario:string
+}
